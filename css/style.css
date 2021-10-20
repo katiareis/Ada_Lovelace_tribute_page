@@ -1,0 +1,278 @@
+/* Colors 
+
+Pink - #ea2e49 
+black - #222222
+blue -  #122ab2 
+darkblue - #2c70ff
+gray - #7c7c7c
+lightgray - #a4a4a4
+gray bg - #f7f7f7
+purple - #ae81ff
+pink - #f9265e
+blue - #66d9eb
+
+*/
+
+/*Reset styles*/
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  color: #222222;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* End Reset Styles */
+
+/* Header - Menu */
+
+.header-bg {
+  background: #2c70ff;
+}
+
+.header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: white;
+}
+
+.header-logo {
+  font-size: 2.25em; /* 36px / 16px = 2.25em */
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/* Navigation - Menu */
+
+.menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-nav a {
+  font-size: 1.25em; /* 20px / 16px = 1.25em */
+  color: white;
+  display: block;
+  padding: 10px;
+}
+
+.menu-nav a:hover {
+  color: #122ab2;
+}
+
+/* Main content */
+/* Intro Section */
+
+.introduction {
+  font-size: 3em; /* 48px / 16px = 3em */
+  line-height: 1.5em;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 10px;
+}
+
+.intro-section {
+  border-top: 2px solid #2c70ff;
+  border-bottom: 2px solid #2c70ff;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.quote {
+  font-size: 1.25em; /* 20px / 16px = 1.25em */
+  color: #7c7c7c;
+  line-height: 1.4em;
+  flex: 1 1 300px; /* Define flex-grow: 1;  flex-shrink: 1, flex-basis: 300px */
+  margin: 0 10px;
+}
+
+.intro-img {
+  flex: 2 1 160px; /* Define flex-grow: 2;  flex-shrink: 1, flex-basis: 160px */
+  margin: 0 10px;
+  max-width: 100%;
+}
+
+/* Profile Section */
+
+.profile-info {
+  max-width: 960px;
+  margin: 60px auto;
+}
+
+.profile-info h2 {
+  font-size: 3em; /* 48px / 16px = 3em */
+  margin: 0px 10px 60px 10px;
+}
+
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f7f7f7;
+}
+
+.profile-text {
+  flex: 2 1 160px; /* Define flex-grow: 2;  flex-shrink: 1, flex-basis: 160px */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 0 20px;
+}
+
+.profile-image {
+  max-width: 100%;
+  flex: 1 1 300px; /* Define flex-grow: 1;  flex-shrink: 1, flex-basis: 300px */
+  padding: 0;
+  margin: 0;
+}
+
+/* History Section */
+
+.history-section {
+  max-width: 960px;
+  margin: 60px auto;
+}
+
+.history-section h2 {
+  font-size: 3em; /* 48px / 16px = 3em */
+  margin: 0px 10px 60px 10px;
+}
+
+.history-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.history-container li {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  color: #7c7c7c;
+  flex: 1 1 300px;
+  margin: 20px 10px;
+  min-width: 360px;
+}
+
+.history-container li strong {
+  font-size: 2.25em; /* 36px / 16px = 2.25em */
+  color: #a4a4a4;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.history-container li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 40px;
+  /*background: #122ab2;*/
+  margin-right: 10px;
+}
+
+.history-item-1::before {
+  background: #ae81ff;
+}
+
+.history-item-2::before {
+  background: #f9265e;
+}
+
+.quote2 {
+  font-size: 1.25em; /* 20px / 16px = 1.25em */
+  line-height: 1.4em;
+  max-width: 100%;
+  margin: 60px auto;
+  padding: 100px;
+  background-color: #f7f7f7;
+  color: #7c7c7c;
+}
+
+/* Contributions section */
+.contributions {
+  max-width: 960px;
+  margin: 60px auto;
+}
+
+.contributions h2 {
+  font-size: 3em; /* 48px / 16px = 3em */
+  margin: 0px 10px 60px 10px;
+}
+
+.contribution-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contribution-image {
+  max-width: 100%;
+  justify-content: space-evenly;
+}
+
+.contribution-image img {
+  flex-grow: 1 1 300px;
+  padding: 10px;
+}
+
+.contribution-text p {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Learn More section */
+.learn-more {
+  max-width: 960px;
+  margin: 60px auto;
+}
+
+/*Footer*/
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  background: #2c70ff;
+  min-height: 80px;
+  font-size: 1.25em;
+  color: #122ab2;
+  padding: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer p,
+span,
+a {
+  padding: 10px;
+}
