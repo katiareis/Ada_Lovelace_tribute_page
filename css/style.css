@@ -1,18 +1,3 @@
-/* Colors 
-
-Pink - #ea2e49 
-black - #222222
-blue -  #122ab2 
-darkblue - #2c70ff
-gray - #7c7c7c
-lightgray - #a4a4a4
-gray bg - #f7f7f7
-purple - #ae81ff
-pink - #f9265e
-blue - #66d9eb
-
-*/
-
 /*Reset styles*/
 body,
 h1,
@@ -52,10 +37,12 @@ img {
 
 .header-bg {
   background: #2c70ff;
+  max-width: 100vw;
 }
 
 .header {
   max-width: 960px;
+  width: 80vw;
   margin: 0 auto;
   padding: 15px 0;
   display: flex;
@@ -71,7 +58,6 @@ img {
 .header-logo {
   font-size: 2.25em; /* 36px / 16px = 2.25em */
   font-weight: bold;
-  margin: 0 10px;
 }
 
 /* Navigation - Menu */
@@ -92,6 +78,22 @@ img {
   color: #122ab2;
 }
 
+/* Media Queries */
+@media (max-width: 576px) {
+  .menu-nav ul {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu-nav ul li {
+    max-width: 100%;
+    width: 100%;
+    flex: 1;
+  }
+}
+
 /* Main content */
 /* Intro Section */
 
@@ -99,6 +101,7 @@ img {
   font-size: 3em; /* 48px / 16px = 3em */
   line-height: 1.5em;
   max-width: 960px;
+  width: 80vw;
   margin: 0 auto;
   padding: 60px 10px;
 }
@@ -107,6 +110,7 @@ img {
   border-top: 2px solid #2c70ff;
   border-bottom: 2px solid #2c70ff;
   max-width: 960px;
+  width: 80vw;
   margin: 0 auto;
   padding: 60px 0px;
   display: flex;
@@ -128,10 +132,23 @@ img {
   max-width: 100%;
 }
 
+/* Media Queries */
+@media (max-width: 576px) {
+  .introduction h1 {
+    font-size: 1.25em;
+  }
+
+  .introduction p {
+    font-size: 0.8em;
+    line-height: 1.3em;
+  }
+}
+
 /* Profile Section */
 
 .profile-info {
   max-width: 960px;
+  width: 80vw;
   margin: 60px auto;
 }
 
@@ -160,10 +177,21 @@ img {
   margin: 0;
 }
 
+/* Media Queries */
+@media (max-width: 576px) {
+  .profile-container {
+    padding: 5px;
+  }
+  .profile-text p {
+    margin: 10px 0;
+  }
+}
+
 /* History Section */
 
 .history-section {
   max-width: 960px;
+  width: 80vw;
   margin: 60px auto;
 }
 
@@ -223,6 +251,7 @@ img {
 /* Contributions section */
 .contributions {
   max-width: 960px;
+  width: 80vw;
   margin: 60px auto;
 }
 
@@ -254,6 +283,7 @@ img {
 /* Learn More section */
 .learn-more {
   max-width: 960px;
+  width: 80vw;
   margin: 60px auto;
 }
 
